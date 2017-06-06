@@ -1,0 +1,5 @@
+package com.randioo.chat_server.protocol;
+
+message CS{
+	optional ChatConnectRequest ChatConnectRequest = 1;
+} // 15

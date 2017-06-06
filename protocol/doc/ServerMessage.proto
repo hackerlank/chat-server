@@ -1,0 +1,4 @@
+package com.randioo.chat_server.protocol;
+
+message SC{
+} // 24

@@ -1,0 +1,9 @@
+package com.randioo.chat_server.protocol;
+
+message ChatConnectRequest{
+	
+}
+
+message ChatConnectResponse{
+	
+}
