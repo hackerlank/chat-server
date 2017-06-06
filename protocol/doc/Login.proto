@@ -1,0 +1,10 @@
+package com.randioo.chat_server.protocol;
+import "Entity.proto";
+
+message LoginRequest{
+	optional string account = 1;
+}
+
+message LoginResponse{
+	optional int32 errorCode = 1 [default=1];
+}

@@ -1,0 +1,8 @@
+package com.randioo.chat_server.protocol;
+
+message ChatData{
+	optional int32 roleId = 1;
+	optional string msg = 2;
+	optional bytes voice = 3;
+	optional int32 tag = 4;
+}

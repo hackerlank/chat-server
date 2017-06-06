@@ -1,4 +1,11 @@
 package com.randioo.chat_server.protocol;
+import "Chat.proto";
+import "Login.proto";
 
 message SC{
-} // 24
+	optional LoginResponse LoginResponse = 1;
+
+	optional ChatSendResponse ChatSendResponse = 2;
+	optional ChatJoinRoomResponse ChatJoinRoomResponse = 3;
+	optional SCChat SCChat = 4;
+} // 4

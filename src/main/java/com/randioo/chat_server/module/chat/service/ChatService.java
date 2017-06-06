@@ -1,12 +1,15 @@
 package com.randioo.chat_server.module.chat.service;
 
-import java.util.List;
-
 import org.apache.mina.core.session.IoSession;
 
-import com.randioo.randioo_server_base.service.BaseServiceInterface;
+import com.randioo.chat_server.protocol.Entity.ChatData;
+import com.randioo.randioo_server_base.service.ObserveBaseServiceInterface;
 
-public interface ChatService extends BaseServiceInterface {
+public interface ChatService extends ObserveBaseServiceInterface {
 
-	public void connect(List<String> keyList, IoSession session);
+	public void addRoom(IoSession session, String gameId);
+
+	public void quitRoom(IoSession session);
+
+	public void send(IoSession session, ChatData chatData);
 }

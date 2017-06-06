@@ -1,9 +1,22 @@
 package com.randioo.chat_server.protocol;
+import "Entity.proto";
 
-message ChatConnectRequest{
+message ChatJoinRoomRequest{
+	optional string roomId = 1;	
+}
+
+message ChatJoinRoomResponse{
 	
 }
 
-message ChatConnectResponse{
+message ChatSendRequest{
+	optional ChatData chatData = 1;
+}
+
+message ChatSendResponse{
 	
+}
+
+message SCChat{
+	optional ChatData chatData = 1;
 }

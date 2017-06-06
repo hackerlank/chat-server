@@ -1,5 +1,10 @@
 package com.randioo.chat_server.protocol;
+import "Chat.proto";
+import "Login.proto";
 
 message CS{
-	optional ChatConnectRequest ChatConnectRequest = 1;
-} // 15
+	optional LoginRequest LoginRequest = 1;
+
+	optional ChatSendRequest ChatSendRequest = 2;
+	optional ChatJoinRoomRequest ChatJoinRoomRequest = 3;
+} // 3
