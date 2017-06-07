@@ -19,7 +19,7 @@ public class LoginAction implements IActionSupport {
 	@Override
 	public void execute(Object data, IoSession session) {
 		LoginRequest request = (LoginRequest) data;
-		loginService.login(session, request.getAccount());
+		loginService.connect(session, request.getAccount());
 	}
 
 }

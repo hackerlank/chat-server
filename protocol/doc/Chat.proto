@@ -9,12 +9,21 @@ message ChatJoinRoomResponse{
 	
 }
 
+message ChatQuitRoomRequest{
+	optional string roomId = 1;
+}
+
+message ChatQuitRoomResponse{
+	
+}
+
 message ChatSendRequest{
-	optional ChatData chatData = 1;
+	optional string roomId = 1;
+	optional ChatData chatData = 2;
 }
 
 message ChatSendResponse{
-	
+	optional int32 errorCode = 1 [default = 1];
 }
 
 message SCChat{

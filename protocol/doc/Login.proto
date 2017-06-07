@@ -6,5 +6,5 @@ message LoginRequest{
 }
 
 message LoginResponse{
-	optional int32 errorCode = 1 [default=1];
+	optional int32 errorCode = 1 [default =1];
 }

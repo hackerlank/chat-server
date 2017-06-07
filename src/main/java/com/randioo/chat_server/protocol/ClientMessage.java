@@ -56,10 +56,18 @@ public final class ClientMessage {
     public boolean hasChatJoinRoomRequest() { return hasChatJoinRoomRequest; }
     public com.randioo.chat_server.protocol.Chat.ChatJoinRoomRequest getChatJoinRoomRequest() { return chatJoinRoomRequest_; }
     
+    // optional .com.randioo.chat_server.protocol.ChatQuitRoomRequest ChatQuitRoomRequest = 4;
+    public static final int CHATQUITROOMREQUEST_FIELD_NUMBER = 4;
+    private boolean hasChatQuitRoomRequest;
+    private com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest chatQuitRoomRequest_;
+    public boolean hasChatQuitRoomRequest() { return hasChatQuitRoomRequest; }
+    public com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest getChatQuitRoomRequest() { return chatQuitRoomRequest_; }
+    
     private void initFields() {
       loginRequest_ = com.randioo.chat_server.protocol.Login.LoginRequest.getDefaultInstance();
       chatSendRequest_ = com.randioo.chat_server.protocol.Chat.ChatSendRequest.getDefaultInstance();
       chatJoinRoomRequest_ = com.randioo.chat_server.protocol.Chat.ChatJoinRoomRequest.getDefaultInstance();
+      chatQuitRoomRequest_ = com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.getDefaultInstance();
     }
     public final boolean isInitialized() {
       return true;
@@ -76,6 +84,9 @@ public final class ClientMessage {
       }
       if (hasChatJoinRoomRequest()) {
         output.writeMessage(3, getChatJoinRoomRequest());
+      }
+      if (hasChatQuitRoomRequest()) {
+        output.writeMessage(4, getChatQuitRoomRequest());
       }
       getUnknownFields().writeTo(output);
     }
@@ -97,6 +108,10 @@ public final class ClientMessage {
       if (hasChatJoinRoomRequest()) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getChatJoinRoomRequest());
+      }
+      if (hasChatQuitRoomRequest()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getChatQuitRoomRequest());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -265,6 +280,9 @@ public final class ClientMessage {
         if (other.hasChatJoinRoomRequest()) {
           mergeChatJoinRoomRequest(other.getChatJoinRoomRequest());
         }
+        if (other.hasChatQuitRoomRequest()) {
+          mergeChatQuitRoomRequest(other.getChatQuitRoomRequest());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -315,6 +333,15 @@ public final class ClientMessage {
               }
               input.readMessage(subBuilder, extensionRegistry);
               setChatJoinRoomRequest(subBuilder.buildPartial());
+              break;
+            }
+            case 34: {
+              com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.Builder subBuilder = com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.newBuilder();
+              if (hasChatQuitRoomRequest()) {
+                subBuilder.mergeFrom(getChatQuitRoomRequest());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setChatQuitRoomRequest(subBuilder.buildPartial());
               break;
             }
           }
@@ -433,6 +460,43 @@ public final class ClientMessage {
         return this;
       }
       
+      // optional .com.randioo.chat_server.protocol.ChatQuitRoomRequest ChatQuitRoomRequest = 4;
+      public boolean hasChatQuitRoomRequest() {
+        return result.hasChatQuitRoomRequest();
+      }
+      public com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest getChatQuitRoomRequest() {
+        return result.getChatQuitRoomRequest();
+      }
+      public Builder setChatQuitRoomRequest(com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        result.hasChatQuitRoomRequest = true;
+        result.chatQuitRoomRequest_ = value;
+        return this;
+      }
+      public Builder setChatQuitRoomRequest(com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.Builder builderForValue) {
+        result.hasChatQuitRoomRequest = true;
+        result.chatQuitRoomRequest_ = builderForValue.build();
+        return this;
+      }
+      public Builder mergeChatQuitRoomRequest(com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest value) {
+        if (result.hasChatQuitRoomRequest() &&
+            result.chatQuitRoomRequest_ != com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.getDefaultInstance()) {
+          result.chatQuitRoomRequest_ =
+            com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.newBuilder(result.chatQuitRoomRequest_).mergeFrom(value).buildPartial();
+        } else {
+          result.chatQuitRoomRequest_ = value;
+        }
+        result.hasChatQuitRoomRequest = true;
+        return this;
+      }
+      public Builder clearChatQuitRoomRequest() {
+        result.hasChatQuitRoomRequest = false;
+        result.chatQuitRoomRequest_ = com.randioo.chat_server.protocol.Chat.ChatQuitRoomRequest.getDefaultInstance();
+        return this;
+      }
+      
       // @@protoc_insertion_point(builder_scope:com.randioo.chat_server.protocol.CS)
     }
     
@@ -461,12 +525,15 @@ public final class ClientMessage {
     java.lang.String[] descriptorData = {
       "\n\023ClientMessage.proto\022 com.randioo.chat_" +
       "server.protocol\032\nChat.proto\032\013Login.proto" +
-      "\"\352\001\n\002CS\022D\n\014LoginRequest\030\001 \001(\0132..com.rand" +
+      "\"\276\002\n\002CS\022D\n\014LoginRequest\030\001 \001(\0132..com.rand" +
       "ioo.chat_server.protocol.LoginRequest\022J\n" +
       "\017ChatSendRequest\030\002 \001(\01321.com.randioo.cha" +
       "t_server.protocol.ChatSendRequest\022R\n\023Cha" +
       "tJoinRoomRequest\030\003 \001(\01325.com.randioo.cha" +
-      "t_server.protocol.ChatJoinRoomRequest"
+      "t_server.protocol.ChatJoinRoomRequest\022R\n" +
+      "\023ChatQuitRoomRequest\030\004 \001(\01325.com.randioo" +
+      ".chat_server.protocol.ChatQuitRoomReques",
+      "t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -478,7 +545,7 @@ public final class ClientMessage {
           internal_static_com_randioo_chat_server_protocol_CS_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_randioo_chat_server_protocol_CS_descriptor,
-              new java.lang.String[] { "LoginRequest", "ChatSendRequest", "ChatJoinRoomRequest", },
+              new java.lang.String[] { "LoginRequest", "ChatSendRequest", "ChatJoinRoomRequest", "ChatQuitRoomRequest", },
               com.randioo.chat_server.protocol.ClientMessage.CS.class,
               com.randioo.chat_server.protocol.ClientMessage.CS.Builder.class);
           return null;

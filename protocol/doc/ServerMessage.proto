@@ -7,5 +7,6 @@ message SC{
 
 	optional ChatSendResponse ChatSendResponse = 2;
 	optional ChatJoinRoomResponse ChatJoinRoomResponse = 3;
-	optional SCChat SCChat = 4;
-} // 4
+	optional ChatQuitRoomResponse ChatQuitRoomResponse = 4;
+	optional SCChat SCChat = 5;
+} // 5

@@ -1,4 +1,4 @@
-package com.randioo.chat_server.cache.local;
+package com.randioo.randioo_server_base.cache;
 
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;

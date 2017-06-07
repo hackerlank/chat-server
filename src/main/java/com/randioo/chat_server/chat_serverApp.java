@@ -25,8 +25,6 @@ public class chat_serverApp {
 		((GameServerInit) SpringContext.getBean("gameServerInit")).setHandler(serverHandler).start();
 		GlobleConfig.set(GlobleEnum.LOGIN, true);
 
-		// test.test();
-
 	}
 
 }

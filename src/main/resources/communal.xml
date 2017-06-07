@@ -7,34 +7,6 @@
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd 
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
-	<bean id="databaseInitialization" class="com.randioo.randioo_server_base.db.DatabaseInitialization">
-		<property name="dataSource" ref="dataSource"></property>
-		<property name="databaseName" value="chat_server"></property>
-		<property name="sqls">
-			<list>
-				<value>
-					CREATE TABLE IF NOT EXISTS {database}.`role` (
-					`roleId` int(11) DEFAULT NULL COMMENT '玩家id',
-					`account` varchar(255) DEFAULT NULL COMMENT '帐号',
-					`name` varchar(255) DEFAULT NULL COMMENT '名称',
-					`money` int(11) DEFAULT NULL COMMENT '游戏币（欢乐豆）',
-					`gameId` int(11) DEFAULT NULL COMMENT '游戏id',
-					`sex` int(2) DEFAULT NULL COMMENT '性别',
-					`moneyExchangeNum` int(11) DEFAULT NULL COMMENT '游戏币（欢乐豆）兑换数量',
-					`volume` int(4) DEFAULT NULL COMMENT '音效音量',
-					`musicVolume` int(4) DEFAULT NULL COMMENT '音乐音量',
-					`loginTimeStr` varchar(255) DEFAULT NULL COMMENT '登陆时间',
-					`offlineTimeStr` varchar(255) DEFAULT NULL COMMENT '离线时间',
-					`createTimeStr` varchar(255) DEFAULT NULL COMMENT '创建时间',
-					`loadTimeStr` varchar(255) DEFAULT NULL COMMENT '加载时间',
-					`moneyExchangeTimeStr` varchar(255) DEFAULT NULL COMMENT '游戏币兑换时间',
-					PRIMARY KEY (`roleId`)
-					) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-				</value>
-			</list>
-		</property>
-	</bean>
-
 	<bean id="schedulerManager" class="com.randioo.randioo_server_base.scheduler.SchedulerManager">
 		<property name="schedulers">
 			<list>
@@ -47,9 +19,8 @@
 			<list>
 				<ref bean="loginService" />
 				<ref bean="gmService" />
-				<ref bean="roleService" />
 				<ref bean="closeService" />
-
+				<ref bean="chatService" />
 			</list>
 		</property>
 	</bean>

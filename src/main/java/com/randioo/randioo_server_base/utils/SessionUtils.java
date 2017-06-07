@@ -2,7 +2,7 @@ package com.randioo.randioo_server_base.utils;
 
 import org.apache.mina.core.session.IoSession;
 
-import com.randioo.chat_server.cache.local.SessionCache;
+import com.randioo.randioo_server_base.cache.SessionCache;
 
 public class SessionUtils {
 	public static void sc(IoSession session, Object message) {

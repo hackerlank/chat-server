@@ -19,7 +19,6 @@ import com.randioo.randioo_server_base.cache.RoleCache;
 import com.randioo.randioo_server_base.navigation.Navigation;
 import com.randioo.randioo_server_base.net.IoHandlerAdapter;
 import com.randioo.randioo_server_base.template.IActionSupport;
-import com.randioo.randioo_server_base.utils.TimeUtils;
 
 @Component
 public class ServerHandler extends IoHandlerAdapter {
@@ -107,32 +106,30 @@ public class ServerHandler extends IoHandlerAdapter {
 
 	@Override
 	public void messageSent(IoSession session, Object message) throws Exception {
-		if (!message.toString().contains("scFightKeyFrame") && !message.toString().contains("PingResponse")) {
-			logger.info(getMessage(message, session));
-		}
+		logger.info(message.toString());
 	}
 
-	private String getMessage(Object message, IoSession session) {
-		Integer roleId = (Integer) session.getAttribute("roleId");
-		String roleAccount = null;
-		String roleName = null;
-		if (roleId != null) {
-			Role role = (Role) RoleCache.getRoleById(roleId);
-			if (role != null) {
-				roleAccount = role.getAccount();
-				roleName = role.getName();
-			}
-		}
-
-		StringBuilder sb = new StringBuilder();
-		sb.append(TimeUtils.getDetailTimeStr()).append(" [roleId:").append(roleId).append(",account:")
-				.append(roleAccount).append(",name:").append(roleName).append("] ").append(message);
-		String output = sb.toString();
-		if (output.length() < 120) {
-			output = output.replaceAll("\n", " ").replace("\t", " ").replace("  ", "");
-		}
-
-		return output;
-	}
+//	private String getMessage(Object message, IoSession session) {
+//		Integer roleId = (Integer) session.getAttribute("roleId");
+//		String roleAccount = null;
+//		String roleName = null;
+//		if (roleId != null) {
+//			Role role = (Role) RoleCache.getRoleById(roleId);
+//			if (role != null) {
+//				roleAccount = role.getAccount();
+//				roleName = role.getName();
+//			}
+//		}
+//
+//		StringBuilder sb = new StringBuilder();
+//		sb.append(TimeUtils.getDetailTimeStr()).append(" [roleId:").append(roleId).append(",account:")
+//				.append(roleAccount).append(",name:").append(roleName).append("] ").append(message);
+//		String output = sb.toString();
+//		if (output.length() < 120) {
+//			output = output.replaceAll("\n", " ").replace("\t", " ").replace("  ", "");
+//		}
+//
+//		return output;
+//	}
 
 }

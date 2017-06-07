@@ -6,5 +6,4 @@ import com.randioo.randioo_server_base.service.BaseServiceInterface;
 public interface CloseService extends BaseServiceInterface {
 	public void asynManipulate(Role role);
 
-	public void roleDataCache2DB(Role role, boolean mustSave);
 }

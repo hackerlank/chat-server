@@ -7,4 +7,5 @@ message CS{
 
 	optional ChatSendRequest ChatSendRequest = 2;
 	optional ChatJoinRoomRequest ChatJoinRoomRequest = 3;
-} // 3
+	optional ChatQuitRoomRequest ChatQuitRoomRequest = 4;
+} // 4
