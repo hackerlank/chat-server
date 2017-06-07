@@ -12,9 +12,6 @@ import com.randioo.randioo_server_base.service.BaseService;
 public class CloseServiceImpl extends BaseService implements CloseService {
 
 	@Autowired
-	private GameDB gameDB;
-
-	@Autowired
 	private LoginService loginService;
 
 	@Override

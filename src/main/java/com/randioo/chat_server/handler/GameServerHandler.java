@@ -17,12 +17,12 @@ import com.randioo.chat_server.module.close.service.CloseService;
 import com.randioo.chat_server.protocol.ClientMessage.CS;
 import com.randioo.randioo_server_base.cache.RoleCache;
 import com.randioo.randioo_server_base.navigation.Navigation;
-import com.randioo.randioo_server_base.net.IoHandlerAdapter;
+import com.randioo.randioo_server_base.net.GameServerHandlerAdapter;
 import com.randioo.randioo_server_base.template.IActionSupport;
 
 @Component
-public class ServerHandler extends IoHandlerAdapter {
-	private Logger logger = LoggerFactory.getLogger(ServerHandler.class);
+public class GameServerHandler extends GameServerHandlerAdapter {
+	private Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
 	@Autowired
 	private CloseService closeService;
@@ -61,7 +61,7 @@ public class ServerHandler extends IoHandlerAdapter {
 
 	@Override
 	public void exceptionCaught(IoSession session, Throwable e) throws Exception {
-
+		logger.error("exceptionCaught", e);
 	}
 
 	@Override
@@ -71,6 +71,7 @@ public class ServerHandler extends IoHandlerAdapter {
 
 		try {
 			CS message = CS.parseDelimitedFrom(input);
+			logger.info(message.toString());
 			actionDispatcher(message, session);
 		} catch (Exception e) {
 			logger.error("", e);
@@ -108,28 +109,5 @@ public class ServerHandler extends IoHandlerAdapter {
 	public void messageSent(IoSession session, Object message) throws Exception {
 		logger.info(message.toString());
 	}
-
-//	private String getMessage(Object message, IoSession session) {
-//		Integer roleId = (Integer) session.getAttribute("roleId");
-//		String roleAccount = null;
-//		String roleName = null;
-//		if (roleId != null) {
-//			Role role = (Role) RoleCache.getRoleById(roleId);
-//			if (role != null) {
-//				roleAccount = role.getAccount();
-//				roleName = role.getName();
-//			}
-//		}
-//
-//		StringBuilder sb = new StringBuilder();
-//		sb.append(TimeUtils.getDetailTimeStr()).append(" [roleId:").append(roleId).append(",account:")
-//				.append(roleAccount).append(",name:").append(roleName).append("] ").append(message);
-//		String output = sb.toString();
-//		if (output.length() < 120) {
-//			output = output.replaceAll("\n", " ").replace("\t", " ").replace("  ", "");
-//		}
-//
-//		return output;
-//	}
 
 }

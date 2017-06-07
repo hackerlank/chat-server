@@ -28,8 +28,11 @@ public class ChatServiceImpl extends ObserveBaseService implements ChatService {
 
 	@Override
 	public GeneratedMessage addRoom(Role role, String roomId) {
+		roomId = getRoomId(roomId);
+
 		Room room = getRoom(roomId);
 		room.getAccountSet().add(role.getAccount());
+		role.getRoomIdSet().add(roomId);
 
 		return SC.newBuilder().setChatJoinRoomResponse(ChatJoinRoomResponse.newBuilder()).build();
 	}
@@ -44,12 +47,13 @@ public class ChatServiceImpl extends ObserveBaseService implements ChatService {
 	@Override
 	public GeneratedMessage quitRoom(Role role, String roomId) {
 		roomId = getRoomId(roomId);
+
 		Map<String, Room> roomMap = RoomCache.getRoomMap();
 		Room room = roomMap.get(roomId);
 		String account = role.getAccount();
 		if (room == null)
 			return SC.newBuilder().setChatQuitRoomResponse(ChatQuitRoomResponse.newBuilder()).build();
-		
+
 		Lock lock = CacheLockUtil.getLock(Room.class, roomId);
 		try {
 			lock.lock();
@@ -74,23 +78,21 @@ public class ChatServiceImpl extends ObserveBaseService implements ChatService {
 	@Override
 	public void send(IoSession session, Role role, String roomId, ChatData chatData) {
 		roomId = getRoomId(roomId);
+
 		if (!role.getRoomIdSet().contains(roomId)) {
 			session.write(SC
 					.newBuilder()
 					.setChatSendResponse(
-							ChatSendResponse.newBuilder().setErrorCode(ErrorCode.GAME_NOT_EXIST.getNumber())).build());
+							ChatSendResponse.newBuilder().setErrorCode(ErrorCode.CONNECT_ERROR.getNumber())).build());
 			return;
 		}
-		session.write(SC.newBuilder().setSCChat(SCChat.newBuilder()).build());
+		session.write(SC.newBuilder().setChatSendResponse(ChatSendResponse.newBuilder()).build());
 
 		Room room = getRoom(roomId);
 		Set<String> accountSet = room.getAccountSet();
 
 		SC sc = SC.newBuilder().setSCChat(SCChat.newBuilder().setChatData(chatData)).build();
 		for (String account : accountSet) {
-			if (account.equals(role.getAccount()))
-				continue;
-
 			SessionUtils.sc(account, sc);
 		}
 	}
@@ -103,7 +105,6 @@ public class ChatServiceImpl extends ObserveBaseService implements ChatService {
 	 * @author wcy 2017年6月7日
 	 */
 	private Room getRoom(String roomId) {
-		roomId = ChatConstant.ROOM + roomId;
 		Map<String, Room> roomMap = RoomCache.getRoomMap();
 		Room room = roomMap.get(roomId);
 		if (room != null)

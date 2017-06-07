@@ -42,6 +42,13 @@ public final class Entity {
     public boolean hasRoleId() { return hasRoleId; }
     public int getRoleId() { return roleId_; }
     
+    // optional int32 tag = 4;
+    public static final int TAG_FIELD_NUMBER = 4;
+    private boolean hasTag;
+    private int tag_ = 0;
+    public boolean hasTag() { return hasTag; }
+    public int getTag() { return tag_; }
+    
     // optional string msg = 2;
     public static final int MSG_FIELD_NUMBER = 2;
     private boolean hasMsg;
@@ -55,13 +62,6 @@ public final class Entity {
     private com.google.protobuf.ByteString voice_ = com.google.protobuf.ByteString.EMPTY;
     public boolean hasVoice() { return hasVoice; }
     public com.google.protobuf.ByteString getVoice() { return voice_; }
-    
-    // optional int32 tag = 4;
-    public static final int TAG_FIELD_NUMBER = 4;
-    private boolean hasTag;
-    private int tag_ = 0;
-    public boolean hasTag() { return hasTag; }
-    public int getTag() { return tag_; }
     
     private void initFields() {
     }
@@ -270,14 +270,14 @@ public final class Entity {
         if (other.hasRoleId()) {
           setRoleId(other.getRoleId());
         }
+        if (other.hasTag()) {
+          setTag(other.getTag());
+        }
         if (other.hasMsg()) {
           setMsg(other.getMsg());
         }
         if (other.hasVoice()) {
           setVoice(other.getVoice());
-        }
-        if (other.hasTag()) {
-          setTag(other.getTag());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -343,6 +343,24 @@ public final class Entity {
         return this;
       }
       
+      // optional int32 tag = 4;
+      public boolean hasTag() {
+        return result.hasTag();
+      }
+      public int getTag() {
+        return result.getTag();
+      }
+      public Builder setTag(int value) {
+        result.hasTag = true;
+        result.tag_ = value;
+        return this;
+      }
+      public Builder clearTag() {
+        result.hasTag = false;
+        result.tag_ = 0;
+        return this;
+      }
+      
       // optional string msg = 2;
       public boolean hasMsg() {
         return result.hasMsg();
@@ -385,24 +403,6 @@ public final class Entity {
         return this;
       }
       
-      // optional int32 tag = 4;
-      public boolean hasTag() {
-        return result.hasTag();
-      }
-      public int getTag() {
-        return result.getTag();
-      }
-      public Builder setTag(int value) {
-        result.hasTag = true;
-        result.tag_ = value;
-        return this;
-      }
-      public Builder clearTag() {
-        result.hasTag = false;
-        result.tag_ = 0;
-        return this;
-      }
-      
       // @@protoc_insertion_point(builder_scope:com.randioo.chat_server.protocol.ChatData)
     }
     
@@ -431,7 +431,7 @@ public final class Entity {
     java.lang.String[] descriptorData = {
       "\n\014Entity.proto\022 com.randioo.chat_server." +
       "protocol\"C\n\010ChatData\022\016\n\006roleId\030\001 \001(\005\022\013\n\003" +
-      "msg\030\002 \001(\t\022\r\n\005voice\030\003 \001(\014\022\013\n\003tag\030\004 \001(\005"
+      "tag\030\004 \001(\005\022\013\n\003msg\030\002 \001(\t\022\r\n\005voice\030\003 \001(\014"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -443,7 +443,7 @@ public final class Entity {
           internal_static_com_randioo_chat_server_protocol_ChatData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_randioo_chat_server_protocol_ChatData_descriptor,
-              new java.lang.String[] { "RoleId", "Msg", "Voice", "Tag", },
+              new java.lang.String[] { "RoleId", "Tag", "Msg", "Voice", },
               com.randioo.chat_server.protocol.Entity.ChatData.class,
               com.randioo.chat_server.protocol.Entity.ChatData.Builder.class);
           return null;

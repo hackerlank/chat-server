@@ -2,7 +2,7 @@ package com.randioo.chat_server.protocol;
 import "Entity.proto";
 
 message ChatJoinRoomRequest{
-	optional string roomId = 1;	
+	optional string roomId = 1;
 }
 
 message ChatJoinRoomResponse{

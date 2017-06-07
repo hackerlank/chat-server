@@ -1,6 +1,6 @@
 package com.randioo.chat_server;
 
-import com.randioo.chat_server.handler.ServerHandler;
+import com.randioo.chat_server.handler.GameServerHandler;
 import com.randioo.randioo_server_base.config.GlobleConfig;
 import com.randioo.randioo_server_base.config.GlobleConfig.GlobleEnum;
 import com.randioo.randioo_server_base.init.GameServerInit;
@@ -21,8 +21,7 @@ public class chat_serverApp {
 
 		SpringContext.initSpringCtx("ApplicationContext.xml");
 
-		ServerHandler serverHandler = SpringContext.getBean("serverHandler");
-		((GameServerInit) SpringContext.getBean("gameServerInit")).setHandler(serverHandler).start();
+		((GameServerInit) SpringContext.getBean("gameServerInit")).start();
 		GlobleConfig.set(GlobleEnum.LOGIN, true);
 
 	}
