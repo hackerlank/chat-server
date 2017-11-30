@@ -70,12 +70,28 @@ public final class ServerMessage {
     public boolean hasSCChat() { return hasSCChat; }
     public com.randioo.chat_server.protocol.Chat.SCChat getSCChat() { return sCChat_; }
     
+    // optional .com.randioo.chat_server.protocol.HeartResponse HeartResponse = 6;
+    public static final int HEARTRESPONSE_FIELD_NUMBER = 6;
+    private boolean hasHeartResponse;
+    private com.randioo.chat_server.protocol.Heart.HeartResponse heartResponse_;
+    public boolean hasHeartResponse() { return hasHeartResponse; }
+    public com.randioo.chat_server.protocol.Heart.HeartResponse getHeartResponse() { return heartResponse_; }
+    
+    // optional .com.randioo.chat_server.protocol.SCHeart SCHeart = 7;
+    public static final int SCHEART_FIELD_NUMBER = 7;
+    private boolean hasSCHeart;
+    private com.randioo.chat_server.protocol.Heart.SCHeart sCHeart_;
+    public boolean hasSCHeart() { return hasSCHeart; }
+    public com.randioo.chat_server.protocol.Heart.SCHeart getSCHeart() { return sCHeart_; }
+    
     private void initFields() {
       loginResponse_ = com.randioo.chat_server.protocol.Login.LoginResponse.getDefaultInstance();
       chatSendResponse_ = com.randioo.chat_server.protocol.Chat.ChatSendResponse.getDefaultInstance();
       chatJoinRoomResponse_ = com.randioo.chat_server.protocol.Chat.ChatJoinRoomResponse.getDefaultInstance();
       chatQuitRoomResponse_ = com.randioo.chat_server.protocol.Chat.ChatQuitRoomResponse.getDefaultInstance();
       sCChat_ = com.randioo.chat_server.protocol.Chat.SCChat.getDefaultInstance();
+      heartResponse_ = com.randioo.chat_server.protocol.Heart.HeartResponse.getDefaultInstance();
+      sCHeart_ = com.randioo.chat_server.protocol.Heart.SCHeart.getDefaultInstance();
     }
     public final boolean isInitialized() {
       return true;
@@ -98,6 +114,12 @@ public final class ServerMessage {
       }
       if (hasSCChat()) {
         output.writeMessage(5, getSCChat());
+      }
+      if (hasHeartResponse()) {
+        output.writeMessage(6, getHeartResponse());
+      }
+      if (hasSCHeart()) {
+        output.writeMessage(7, getSCHeart());
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,6 +149,14 @@ public final class ServerMessage {
       if (hasSCChat()) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getSCChat());
+      }
+      if (hasHeartResponse()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getHeartResponse());
+      }
+      if (hasSCHeart()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, getSCHeart());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -301,6 +331,12 @@ public final class ServerMessage {
         if (other.hasSCChat()) {
           mergeSCChat(other.getSCChat());
         }
+        if (other.hasHeartResponse()) {
+          mergeHeartResponse(other.getHeartResponse());
+        }
+        if (other.hasSCHeart()) {
+          mergeSCHeart(other.getSCHeart());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -369,6 +405,24 @@ public final class ServerMessage {
               }
               input.readMessage(subBuilder, extensionRegistry);
               setSCChat(subBuilder.buildPartial());
+              break;
+            }
+            case 50: {
+              com.randioo.chat_server.protocol.Heart.HeartResponse.Builder subBuilder = com.randioo.chat_server.protocol.Heart.HeartResponse.newBuilder();
+              if (hasHeartResponse()) {
+                subBuilder.mergeFrom(getHeartResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setHeartResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 58: {
+              com.randioo.chat_server.protocol.Heart.SCHeart.Builder subBuilder = com.randioo.chat_server.protocol.Heart.SCHeart.newBuilder();
+              if (hasSCHeart()) {
+                subBuilder.mergeFrom(getSCHeart());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSCHeart(subBuilder.buildPartial());
               break;
             }
           }
@@ -561,6 +615,80 @@ public final class ServerMessage {
         return this;
       }
       
+      // optional .com.randioo.chat_server.protocol.HeartResponse HeartResponse = 6;
+      public boolean hasHeartResponse() {
+        return result.hasHeartResponse();
+      }
+      public com.randioo.chat_server.protocol.Heart.HeartResponse getHeartResponse() {
+        return result.getHeartResponse();
+      }
+      public Builder setHeartResponse(com.randioo.chat_server.protocol.Heart.HeartResponse value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        result.hasHeartResponse = true;
+        result.heartResponse_ = value;
+        return this;
+      }
+      public Builder setHeartResponse(com.randioo.chat_server.protocol.Heart.HeartResponse.Builder builderForValue) {
+        result.hasHeartResponse = true;
+        result.heartResponse_ = builderForValue.build();
+        return this;
+      }
+      public Builder mergeHeartResponse(com.randioo.chat_server.protocol.Heart.HeartResponse value) {
+        if (result.hasHeartResponse() &&
+            result.heartResponse_ != com.randioo.chat_server.protocol.Heart.HeartResponse.getDefaultInstance()) {
+          result.heartResponse_ =
+            com.randioo.chat_server.protocol.Heart.HeartResponse.newBuilder(result.heartResponse_).mergeFrom(value).buildPartial();
+        } else {
+          result.heartResponse_ = value;
+        }
+        result.hasHeartResponse = true;
+        return this;
+      }
+      public Builder clearHeartResponse() {
+        result.hasHeartResponse = false;
+        result.heartResponse_ = com.randioo.chat_server.protocol.Heart.HeartResponse.getDefaultInstance();
+        return this;
+      }
+      
+      // optional .com.randioo.chat_server.protocol.SCHeart SCHeart = 7;
+      public boolean hasSCHeart() {
+        return result.hasSCHeart();
+      }
+      public com.randioo.chat_server.protocol.Heart.SCHeart getSCHeart() {
+        return result.getSCHeart();
+      }
+      public Builder setSCHeart(com.randioo.chat_server.protocol.Heart.SCHeart value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        result.hasSCHeart = true;
+        result.sCHeart_ = value;
+        return this;
+      }
+      public Builder setSCHeart(com.randioo.chat_server.protocol.Heart.SCHeart.Builder builderForValue) {
+        result.hasSCHeart = true;
+        result.sCHeart_ = builderForValue.build();
+        return this;
+      }
+      public Builder mergeSCHeart(com.randioo.chat_server.protocol.Heart.SCHeart value) {
+        if (result.hasSCHeart() &&
+            result.sCHeart_ != com.randioo.chat_server.protocol.Heart.SCHeart.getDefaultInstance()) {
+          result.sCHeart_ =
+            com.randioo.chat_server.protocol.Heart.SCHeart.newBuilder(result.sCHeart_).mergeFrom(value).buildPartial();
+        } else {
+          result.sCHeart_ = value;
+        }
+        result.hasSCHeart = true;
+        return this;
+      }
+      public Builder clearSCHeart() {
+        result.hasSCHeart = false;
+        result.sCHeart_ = com.randioo.chat_server.protocol.Heart.SCHeart.getDefaultInstance();
+        return this;
+      }
+      
       // @@protoc_insertion_point(builder_scope:com.randioo.chat_server.protocol.SC)
     }
     
@@ -589,16 +717,20 @@ public final class ServerMessage {
     java.lang.String[] descriptorData = {
       "\n\023ServerMessage.proto\022 com.randioo.chat_" +
       "server.protocol\032\nChat.proto\032\013Login.proto" +
-      "\"\200\003\n\002SC\022F\n\rLoginResponse\030\001 \001(\0132/.com.ran" +
-      "dioo.chat_server.protocol.LoginResponse\022" +
-      "L\n\020ChatSendResponse\030\002 \001(\01322.com.randioo." +
-      "chat_server.protocol.ChatSendResponse\022T\n" +
-      "\024ChatJoinRoomResponse\030\003 \001(\01326.com.randio" +
-      "o.chat_server.protocol.ChatJoinRoomRespo" +
-      "nse\022T\n\024ChatQuitRoomResponse\030\004 \001(\01326.com." +
-      "randioo.chat_server.protocol.ChatQuitRoo",
-      "mResponse\0228\n\006SCChat\030\005 \001(\0132(.com.randioo." +
-      "chat_server.protocol.SCChat"
+      "\032\013Heart.proto\"\204\004\n\002SC\022F\n\rLoginResponse\030\001 " +
+      "\001(\0132/.com.randioo.chat_server.protocol.L" +
+      "oginResponse\022L\n\020ChatSendResponse\030\002 \001(\01322" +
+      ".com.randioo.chat_server.protocol.ChatSe" +
+      "ndResponse\022T\n\024ChatJoinRoomResponse\030\003 \001(\013" +
+      "26.com.randioo.chat_server.protocol.Chat" +
+      "JoinRoomResponse\022T\n\024ChatQuitRoomResponse" +
+      "\030\004 \001(\01326.com.randioo.chat_server.protoco",
+      "l.ChatQuitRoomResponse\0228\n\006SCChat\030\005 \001(\0132(" +
+      ".com.randioo.chat_server.protocol.SCChat" +
+      "\022F\n\rHeartResponse\030\006 \001(\0132/.com.randioo.ch" +
+      "at_server.protocol.HeartResponse\022:\n\007SCHe" +
+      "art\030\007 \001(\0132).com.randioo.chat_server.prot" +
+      "ocol.SCHeart"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -610,7 +742,7 @@ public final class ServerMessage {
           internal_static_com_randioo_chat_server_protocol_SC_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_randioo_chat_server_protocol_SC_descriptor,
-              new java.lang.String[] { "LoginResponse", "ChatSendResponse", "ChatJoinRoomResponse", "ChatQuitRoomResponse", "SCChat", },
+              new java.lang.String[] { "LoginResponse", "ChatSendResponse", "ChatJoinRoomResponse", "ChatQuitRoomResponse", "SCChat", "HeartResponse", "SCHeart", },
               com.randioo.chat_server.protocol.ServerMessage.SC.class,
               com.randioo.chat_server.protocol.ServerMessage.SC.Builder.class);
           return null;
@@ -621,6 +753,7 @@ public final class ServerMessage {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.randioo.chat_server.protocol.Chat.getDescriptor(),
           com.randioo.chat_server.protocol.Login.getDescriptor(),
+          com.randioo.chat_server.protocol.Heart.getDescriptor(),
         }, assigner);
   }
   

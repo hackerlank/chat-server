@@ -1,6 +1,7 @@
 package com.randioo.chat_server.protocol;
 import "Chat.proto";
 import "Login.proto";
+import "Heart.proto";
 
 message CS{
 	optional LoginRequest LoginRequest = 1;
@@ -8,4 +9,8 @@ message CS{
 	optional ChatSendRequest ChatSendRequest = 2;
 	optional ChatJoinRoomRequest ChatJoinRoomRequest = 3;
 	optional ChatQuitRoomRequest ChatQuitRoomRequest = 4;
-} // 4
+
+
+	optional HeartRequest HeartRequest = 5;
+	optional CSHeart CSHeart = 6;
+} // 6

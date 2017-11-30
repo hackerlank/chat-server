@@ -1,0 +1,352 @@
+2017-11-22 11:46:14,978 [main] INFO  [chat_serverApp] - {port=61618, project=chat_websocket, gm=true, logurl=http://10.0.51.18/APPadmin/gateway/PhpServices/Log/insertGameLog.php}
+2017-11-22 11:46:17,409 [main] INFO  [GmService] - WINDOWS
+2017-11-22 11:46:17,415 [main] INFO  [com.randioo.chat_server.init.MinaGameServer] - init Services
+2017-11-22 11:46:17,415 [main] INFO  [com.randioo.chat_server.init.MinaGameServer] - scheduler start
+2017-11-22 11:46:17,436 [main] INFO  [com.randioo.chat_server.init.MinaGameServer] - WANSERVER : START SERVER SUCCESS -> socket port:61618
+2017-11-22 11:46:17,436 [main] INFO  [com.randioo.chat_server.init.MinaGameServer] - socket start
+2017-11-22 11:49:54,099 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 11:49:54,101 [pool-6-thread-1] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 11:49:54,120 [pool-6-thread-2] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@7740c621
+2017-11-22 11:49:54,229 [pool-6-thread-2] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "6eb39d12-e335-4189-9c1b-413ae93e3715"
+}
+
+2017-11-22 11:49:54,266 [pool-6-thread-2] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 11:49:54,278 [pool-6-thread-2] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "170246"
+}
+
+2017-11-22 11:49:54,280 [pool-6-thread-2] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 11:50:31,778 [pool-6-thread-1] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 11:50:31,778 [pool-6-thread-1] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 11:50:43,344 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 11:50:43,346 [pool-6-thread-2] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@1019399e
+2017-11-22 11:50:43,346 [pool-6-thread-1] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 11:50:43,416 [pool-6-thread-1] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "a6da772f-f473-46cd-b1f4-b158998d508e"
+}
+
+2017-11-22 11:50:43,417 [pool-6-thread-1] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 11:50:43,436 [pool-6-thread-1] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "170246"
+}
+
+2017-11-22 11:50:43,438 [pool-6-thread-1] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 11:51:04,924 [pool-6-thread-2] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 11:51:04,924 [pool-6-thread-2] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 11:52:59,940 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 11:52:59,942 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 11:52:59,949 [pool-6-thread-3] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@4298b5ca
+2017-11-22 11:53:00,054 [pool-6-thread-3] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "de6c950d-ad4f-4414-a324-5ac3242b4402"
+}
+
+2017-11-22 11:53:00,055 [pool-6-thread-4] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 11:53:00,072 [pool-6-thread-4] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "170246"
+}
+
+2017-11-22 11:53:00,073 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 11:53:17,938 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 11:53:17,938 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 11:53:32,937 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 11:53:32,937 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 11:53:32,939 [pool-6-thread-4] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@41afff44
+2017-11-22 11:54:03,298 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:null sessionClosed
+2017-11-22 11:54:03,301 [pool-6-thread-4] ERROR [GameServerHandler] - 
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-22 11:54:31,949 [NioProcessor-1] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 11:54:31,949 [pool-6-thread-4] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 11:54:31,950 [pool-6-thread-3] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@2c97552e
+2017-11-22 11:54:32,042 [pool-6-thread-3] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "8809deac-7ad4-40fa-a977-ee874730e19d"
+}
+
+2017-11-22 11:54:32,043 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 11:54:32,058 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "170246"
+}
+
+2017-11-22 11:54:32,059 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 11:54:52,920 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 11:54:52,920 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 11:55:15,862 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 11:55:15,862 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 11:55:15,865 [pool-6-thread-4] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@63ff2b6b
+2017-11-22 11:55:15,993 [pool-6-thread-4] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "5019c4cf-37b4-4c15-8c9b-9e1ab79bf3c3"
+}
+
+2017-11-22 11:55:15,998 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 11:55:16,005 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "170246"
+}
+
+2017-11-22 11:55:16,006 [pool-6-thread-4] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 11:57:13,697 [pool-6-thread-3] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 11:57:13,697 [pool-6-thread-3] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 11:57:13,697 [pool-6-thread-5] ERROR [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-22 12:03:57,712 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 12:03:57,714 [pool-6-thread-6] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 12:03:57,718 [pool-6-thread-6] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@69d81fd2
+2017-11-22 12:03:57,824 [pool-6-thread-6] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "c38a1df4-0d63-4f55-a372-a6d8a5621064"
+}
+
+2017-11-22 12:03:57,827 [pool-6-thread-6] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 12:03:57,906 [pool-6-thread-6] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "102041"
+}
+
+2017-11-22 12:03:57,908 [pool-6-thread-6] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 12:05:32,419 [pool-6-thread-7] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 12:05:32,420 [pool-6-thread-7] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 12:05:55,893 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 12:05:55,895 [pool-6-thread-7] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 12:05:55,896 [pool-6-thread-7] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@51b343e9
+2017-11-22 12:05:56,035 [pool-6-thread-7] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "5f2e1464-fcf7-4726-93ec-111713f06a0d"
+}
+
+2017-11-22 12:05:56,036 [pool-6-thread-8] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 12:05:56,098 [pool-6-thread-8] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "102041"
+}
+
+2017-11-22 12:05:56,103 [pool-6-thread-8] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 12:06:00,892 [pool-6-thread-7] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 12:06:00,892 [pool-6-thread-7] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 12:06:24,508 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 12:06:24,509 [pool-6-thread-7] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 12:06:24,510 [pool-6-thread-8] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@3f0d3719
+2017-11-22 13:09:12,085 [pool-6-thread-39] ERROR [GameServerHandler] - 
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-22 13:09:12,086 [pool-6-thread-40] INFO  [GameServerHandler] - roleId:null sessionClosed
+2017-11-22 13:09:34,139 [NioProcessor-1] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:09:34,139 [pool-6-thread-40] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:09:34,140 [pool-6-thread-39] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@70ee5558
+2017-11-22 13:09:34,179 [pool-6-thread-39] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz11"
+  macAddress: "c220bb20-e301-4f5f-95ed-794fe187c3a8"
+}
+
+2017-11-22 13:09:34,181 [pool-6-thread-40] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]LoginResponse { } 
+2017-11-22 13:09:34,209 [pool-6-thread-40] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11] 收到消息ChatJoinRoomRequest {
+  roomId: "128186"
+}
+
+2017-11-22 13:09:34,218 [pool-6-thread-40] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]ChatJoinRoomResponse { } 
+2017-11-22 13:09:42,471 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:09:42,471 [pool-6-thread-40] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:09:42,472 [pool-6-thread-40] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@5b7d90b7
+2017-11-22 13:09:42,545 [pool-6-thread-40] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "126170be-bd77-4558-93b6-4456baa48c64"
+}
+
+2017-11-22 13:09:42,546 [pool-6-thread-40] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 13:09:42,580 [pool-6-thread-40] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "128186"
+}
+
+2017-11-22 13:09:42,581 [pool-6-thread-40] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 13:10:02,629 [pool-6-thread-39] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 13:10:02,630 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 13:10:20,238 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:10:20,239 [pool-6-thread-39] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:10:20,240 [pool-6-thread-41] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@16c75b8a
+2017-11-22 13:10:30,318 [pool-6-thread-39] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "9a514ce5-5295-4f93-a8f5-7960e1164afa"
+}
+
+2017-11-22 13:10:30,320 [pool-6-thread-41] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 13:10:30,398 [pool-6-thread-41] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "128186"
+}
+
+2017-11-22 13:10:30,399 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 13:10:43,721 [pool-6-thread-41] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 13:10:43,722 [pool-6-thread-41] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 13:11:00,647 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:11:00,647 [pool-6-thread-41] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:11:00,649 [pool-6-thread-41] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@69ed60dd
+2017-11-22 13:11:00,790 [pool-6-thread-41] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "6306f2ae-edf5-402e-9a3c-329be8047d8c"
+}
+
+2017-11-22 13:11:00,791 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 13:11:00,810 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "128186"
+}
+
+2017-11-22 13:11:00,810 [pool-6-thread-41] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 13:11:06,121 [pool-6-thread-39] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 13:11:06,121 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 13:11:28,288 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:11:28,288 [pool-6-thread-39] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:11:28,293 [pool-6-thread-39] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@1f124d61
+2017-11-22 13:11:39,086 [pool-6-thread-39] ERROR [GameServerHandler] - 
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-22 13:11:39,087 [pool-6-thread-41] INFO  [GameServerHandler] - roleId:null sessionClosed
+2017-11-22 13:13:31,150 [NioProcessor-1] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:13:31,150 [pool-6-thread-42] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:13:31,152 [pool-6-thread-42] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@14100767
+2017-11-22 13:13:31,315 [pool-6-thread-42] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "7e0d69c8-1951-4b23-a545-db6842788aba"
+}
+
+2017-11-22 13:13:31,316 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 13:13:31,367 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "128186"
+}
+
+2017-11-22 13:13:31,368 [pool-6-thread-42] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 13:13:40,300 [pool-6-thread-39] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 13:13:40,300 [pool-6-thread-39] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 13:13:59,348 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:13:59,349 [pool-6-thread-39] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:13:59,352 [pool-6-thread-39] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@195e5600
+2017-11-22 13:16:08,565 [pool-6-thread-42] INFO  [GameServerHandler] - roleId:null sessionClosed
+2017-11-22 13:16:08,565 [pool-6-thread-43] ERROR [GameServerHandler] - 
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-22 13:16:28,172 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 13:16:28,174 [pool-6-thread-42] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 13:16:28,175 [pool-6-thread-42] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@cda761
+2017-11-22 13:16:32,741 [pool-6-thread-42] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "a80713ef-7e99-4b1f-86dc-172b26cccb44"
+}
+
+2017-11-22 13:16:32,742 [pool-6-thread-43] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-22 13:16:32,810 [pool-6-thread-43] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "128186"
+}
+
+2017-11-22 13:16:32,811 [pool-6-thread-43] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-22 13:17:43,006 [pool-6-thread-42] INFO  [GameServerHandler] - roleId:2 sessionClosed
+2017-11-22 13:17:43,006 [pool-6-thread-42] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]manipulate
+2017-11-22 13:17:44,286 [pool-6-thread-42] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-22 13:17:44,286 [pool-6-thread-42] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-22 17:20:52,867 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 17:20:52,885 [pool-6-thread-44] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 17:20:52,903 [pool-6-thread-45] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@47e9e334
+2017-11-22 17:20:53,036 [pool-6-thread-45] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "oIiUS0v_JpuQNOB4bDrqREAnKVmM"
+  macAddress: "ff795ab8-55c3-4562-95ef-e33a1f195649"
+}
+
+2017-11-22 17:20:53,037 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM]LoginResponse { } 
+2017-11-22 17:20:53,047 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM] 收到消息ChatJoinRoomRequest {
+  roomId: "153831"
+}
+
+2017-11-22 17:20:53,047 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM]ChatJoinRoomResponse { } 
+2017-11-22 17:20:54,056 [pool-6-thread-45] INFO  [GameServerHandler] - roleId:3 sessionClosed
+2017-11-22 17:20:54,056 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM]manipulate
+2017-11-22 17:20:58,902 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-22 17:20:58,903 [pool-6-thread-45] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-22 17:20:59,028 [pool-6-thread-45] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@6d2acc34
+2017-11-22 17:20:59,090 [pool-6-thread-45] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "oIiUS0v_JpuQNOB4bDrqREAnKVmM"
+  macAddress: "9807fc17-6293-4fb9-b914-48ede9251c30"
+}
+
+2017-11-22 17:20:59,090 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM]LoginResponse { } 
+2017-11-22 17:20:59,158 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM] 收到消息ChatJoinRoomRequest {
+  roomId: "172139"
+}
+
+2017-11-22 17:20:59,159 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM]ChatJoinRoomResponse { } 
+2017-11-22 17:21:03,893 [pool-6-thread-45] INFO  [GameServerHandler] - roleId:3 sessionClosed
+2017-11-22 17:21:03,894 [pool-6-thread-45] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0v_JpuQNOB4bDrqREAnKVmM]manipulate

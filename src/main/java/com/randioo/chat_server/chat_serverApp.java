@@ -1,29 +1,25 @@
 package com.randioo.chat_server;
 
-import com.randioo.chat_server.handler.GameServerHandler;
-import com.randioo.randioo_server_base.config.GlobleConfig;
-import com.randioo.randioo_server_base.config.GlobleConfig.GlobleEnum;
-import com.randioo.randioo_server_base.init.GameServerInit;
-import com.randioo.randioo_server_base.sensitive.SensitiveWordDictionary;
+import com.randioo.randioo_server_base.config.GlobleArgsLoader;
+import com.randioo.randioo_server_base.config.GlobleXmlLoader;
+import com.randioo.randioo_server_base.init.GameServer;
+import com.randioo.randioo_server_base.log.LogSystem;
 import com.randioo.randioo_server_base.utils.SpringContext;
-import com.randioo.randioo_server_base.utils.StringUtils;
 
 /**
  * Hello world!
  *
  */
 public class chat_serverApp {
-	public static void main(String[] args) {
-		StringUtils.printArgs(args);
-		GlobleConfig.init(args);
+    public static void main(String[] args) {
+        GlobleXmlLoader.init("./server.xml");
+        GlobleArgsLoader.init(args);
 
-		SensitiveWordDictionary.readAll("./sensitive.txt");
+        LogSystem.init(chat_serverApp.class);
 
-		SpringContext.initSpringCtx("ApplicationContext.xml");
+        SpringContext.initSpringCtx("classpath:ApplicationContext.xml");
 
-		((GameServerInit) SpringContext.getBean("gameServerInit")).start();
-		GlobleConfig.set(GlobleEnum.LOGIN, true);
-
-	}
+        ((GameServer) SpringContext.getBean(GameServer.class)).start();
+    }
 
 }

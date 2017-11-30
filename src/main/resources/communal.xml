@@ -15,13 +15,19 @@
 	</bean>
 
 	<bean id="serviceManager" class="com.randioo.randioo_server_base.service.ServiceManager">
-		<property name="services">
-			<list>
-				<ref bean="loginService" />
-				<ref bean="gmService" />
-				<ref bean="closeService" />
-				<ref bean="chatService" />
-			</list>
-		</property>
+		<property name="basePackage" value="${proj.package}.module"></property>
 	</bean>
+
+	<bean id="gameServer" class="com.randioo.chat_server.init.MinaGameServer"/>
+	
+	<!-- 通信接口包装类 -->
+    <bean p:staticMethod="com.randioo.randioo_server_base.template.Session.addISession"
+          class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="arguments">
+            <list>
+                <bean id="minaSession" class="com.randioo.randioo_server_base.session.MinaSession"/>
+                <!-- <bean id="nettySession" class="com.randioo.randioo_server_base.session.NettySession" /> -->
+            </list>
+        </property>
+    </bean>
 </beans>

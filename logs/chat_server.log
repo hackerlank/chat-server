@@ -1,0 +1,304 @@
+2017-11-23 12:59:41,521 [NioProcessor-1] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 12:59:41,589 [pool-6-thread-46] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 12:59:41,671 [pool-6-thread-46] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@21b7e734
+2017-11-23 12:59:41,794 [pool-6-thread-46] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "d093eeba-6357-4996-8309-4080b0305af1"
+}
+
+2017-11-23 12:59:41,798 [pool-6-thread-47] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-23 12:59:41,821 [pool-6-thread-47] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "153125"
+}
+
+2017-11-23 12:59:41,823 [pool-6-thread-46] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-23 12:59:46,149 [pool-6-thread-46] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-23 12:59:46,149 [pool-6-thread-46] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-23 13:07:05,094 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:07:05,097 [pool-6-thread-48] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:07:05,137 [pool-6-thread-48] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@1a637da4
+2017-11-23 13:07:05,154 [pool-6-thread-48] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "7793d13b-7802-4673-820a-934048358ae4"
+}
+
+2017-11-23 13:07:05,154 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-23 13:07:05,164 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "183385"
+}
+
+2017-11-23 13:07:05,165 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-23 13:07:50,995 [pool-6-thread-49] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-23 13:07:50,995 [pool-6-thread-49] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-23 13:08:22,414 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:08:22,437 [pool-6-thread-49] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:08:22,438 [pool-6-thread-48] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@18b3f8f5
+2017-11-23 13:08:22,481 [pool-6-thread-48] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "2776b5ff-9f59-47c1-b7c9-5bfd64d76cef"
+}
+
+2017-11-23 13:08:22,482 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-23 13:08:22,511 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "186173"
+}
+
+2017-11-23 13:08:22,522 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-23 13:08:28,839 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:08:28,839 [pool-6-thread-48] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:08:28,864 [pool-6-thread-48] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@47e476fc
+2017-11-23 13:08:28,886 [pool-6-thread-48] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz11"
+  macAddress: "84c62b05-62bf-4390-be54-1b272c4ec8e3"
+}
+
+2017-11-23 13:08:28,912 [pool-6-thread-49] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]LoginResponse { } 
+2017-11-23 13:08:28,961 [pool-6-thread-49] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11] 收到消息ChatJoinRoomRequest {
+  roomId: "186173"
+}
+
+2017-11-23 13:08:28,965 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]ChatJoinRoomResponse { } 
+2017-11-23 13:10:16,648 [pool-6-thread-48] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-23 13:10:16,649 [pool-6-thread-48] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-23 13:12:27,777 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:12:27,777 [pool-6-thread-51] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:12:27,809 [pool-6-thread-51] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@1a5f5e4d
+2017-11-23 13:12:31,982 [pool-6-thread-51] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "ebe6dfb2-849d-435a-a03a-a17c023b2e82"
+}
+
+2017-11-23 13:12:31,983 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-23 13:12:32,071 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "186173"
+}
+
+2017-11-23 13:12:32,073 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-23 13:12:44,351 [pool-6-thread-50] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-23 13:12:44,351 [pool-6-thread-50] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-23 13:15:40,127 [NioProcessor-1] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:15:40,127 [pool-6-thread-51] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:15:40,129 [pool-6-thread-51] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@6cdaa445
+2017-11-23 13:15:40,258 [pool-6-thread-51] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "5"
+  macAddress: "cbb63dc1-0858-4ca7-860d-5954cb65b04d"
+}
+
+2017-11-23 13:15:40,260 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:5]LoginResponse { } 
+2017-11-23 13:15:40,322 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:5] 收到消息ChatJoinRoomRequest {
+  roomId: "139315"
+}
+
+2017-11-23 13:15:40,339 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:5]ChatJoinRoomResponse { } 
+2017-11-23 13:15:49,750 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:15:49,767 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:15:49,770 [pool-6-thread-52] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@5d473d44
+2017-11-23 13:15:49,868 [pool-6-thread-52] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "6"
+  macAddress: "dd147ac6-a083-497b-a33c-47921fb9d4d3"
+}
+
+2017-11-23 13:15:49,869 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6]LoginResponse { } 
+2017-11-23 13:15:49,948 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6] 收到消息ChatJoinRoomRequest {
+  roomId: "139315"
+}
+
+2017-11-23 13:15:49,952 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6]ChatJoinRoomResponse { } 
+2017-11-23 13:18:15,758 [pool-6-thread-51] INFO  [GameServerHandler] - roleId:4 sessionClosed
+2017-11-23 13:18:15,758 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:5]manipulate
+2017-11-23 13:18:22,467 [pool-6-thread-51] INFO  [GameServerHandler] - roleId:5 sessionClosed
+2017-11-23 13:18:22,467 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6]manipulate
+2017-11-23 13:19:17,525 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:19:17,525 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:19:17,526 [pool-6-thread-51] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@1a4a7d46
+2017-11-23 13:19:17,661 [pool-6-thread-51] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "6"
+  macAddress: "8f34523c-954f-43e1-a1e7-54bb21905790"
+}
+
+2017-11-23 13:19:17,661 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6]LoginResponse { } 
+2017-11-23 13:19:17,736 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6] 收到消息ChatJoinRoomRequest {
+  roomId: "147096"
+}
+
+2017-11-23 13:19:17,747 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6]ChatJoinRoomResponse { } 
+2017-11-23 13:20:06,703 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:20:06,703 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:20:06,715 [pool-6-thread-51] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@16452e85
+2017-11-23 13:20:06,838 [pool-6-thread-51] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "8"
+  macAddress: "5af3b078-1612-4019-9ca0-81307c604c28"
+}
+
+2017-11-23 13:20:06,839 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:8]LoginResponse { } 
+2017-11-23 13:20:06,917 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:8] 收到消息ChatJoinRoomRequest {
+  roomId: "147096"
+}
+
+2017-11-23 13:20:06,918 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:8]ChatJoinRoomResponse { } 
+2017-11-23 13:20:25,728 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:5 sessionClosed
+2017-11-23 13:20:25,728 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:6]manipulate
+2017-11-23 13:20:34,389 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:6 sessionClosed
+2017-11-23 13:20:34,389 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:8]manipulate
+2017-11-23 13:20:49,467 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:20:49,467 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:20:49,474 [pool-6-thread-51] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@6d05629f
+2017-11-23 13:20:49,605 [pool-6-thread-51] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "11"
+  macAddress: "6fe55c1b-0900-48f1-a6e3-8cb85932f458"
+}
+
+2017-11-23 13:20:49,606 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:11]LoginResponse { } 
+2017-11-23 13:20:49,681 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:11] 收到消息ChatJoinRoomRequest {
+  roomId: "135801"
+}
+
+2017-11-23 13:20:49,682 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:11]ChatJoinRoomResponse { } 
+2017-11-23 13:20:58,359 [NioProcessor-1] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:20:58,372 [pool-6-thread-52] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:20:58,374 [pool-6-thread-52] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@567fbf5a
+2017-11-23 13:20:58,551 [pool-6-thread-52] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "12"
+  macAddress: "6c87649f-58eb-486f-afe3-aa06e01f6296"
+}
+
+2017-11-23 13:20:58,560 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:12]LoginResponse { } 
+2017-11-23 13:20:58,627 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:12] 收到消息ChatJoinRoomRequest {
+  roomId: "135801"
+}
+
+2017-11-23 13:20:58,628 [pool-6-thread-52] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:12]ChatJoinRoomResponse { } 
+2017-11-23 13:44:50,423 [NioProcessor-2] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 13:44:50,423 [pool-6-thread-54] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 13:44:50,449 [pool-6-thread-51] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@3cb2fe47
+2017-11-23 13:44:50,589 [pool-6-thread-51] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "oIiUS0kfPyWEcVYP51HnrEdFYrQ0"
+  macAddress: "26007935-e531-4dbf-b1d4-dbae8a18770c"
+}
+
+2017-11-23 13:44:50,590 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kfPyWEcVYP51HnrEdFYrQ0]LoginResponse { } 
+2017-11-23 13:44:50,721 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kfPyWEcVYP51HnrEdFYrQ0] 收到消息ChatJoinRoomRequest {
+  roomId: "187946"
+}
+
+2017-11-23 13:44:50,722 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kfPyWEcVYP51HnrEdFYrQ0]ChatJoinRoomResponse { } 
+2017-11-23 13:45:08,653 [pool-6-thread-51] INFO  [GameServerHandler] - roleId:9 sessionClosed
+2017-11-23 13:45:08,653 [pool-6-thread-51] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kfPyWEcVYP51HnrEdFYrQ0]manipulate
+2017-11-23 14:05:03,571 [NioProcessor-3] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 14:05:03,571 [pool-6-thread-55] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 14:05:03,582 [pool-6-thread-55] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@48ce88f6
+2017-11-23 14:05:03,711 [pool-6-thread-55] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "oIiUS0kZIHKI-euu0lWIyEAu5gqc"
+  macAddress: "3da590a7-1f01-44c0-8a98-e6e2b1670855"
+}
+
+2017-11-23 14:05:03,713 [pool-6-thread-55] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]LoginResponse { } 
+2017-11-23 14:05:03,761 [pool-6-thread-55] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc] 收到消息ChatJoinRoomRequest {
+  roomId: "118142"
+}
+
+2017-11-23 14:05:03,763 [pool-6-thread-55] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]ChatJoinRoomResponse { } 
+2017-11-23 14:05:09,735 [pool-6-thread-55] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc] 收到消息ChatSendRequest {
+  roomId: "118142"
+  chatData {
+    data: "\000\000\000\003\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\000\000\001"
+  }
+}
+
+2017-11-23 14:05:09,736 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]ChatSendResponse { } 
+2017-11-23 14:05:09,742 [pool-6-thread-55] INFO  [SessionUtils] - roleId=10 message=SCChat {
+  chatData {
+    data: "\000\000\000\003\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\000\000\001"
+  }
+}
+
+2017-11-23 14:05:09,745 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]SCChat {
+  chatData {
+    data: "\000\000\000\003\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\000\000\001"
+  }
+}
+
+2017-11-23 14:05:13,845 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc] 收到消息ChatSendRequest {
+  roomId: "118142"
+  chatData {
+    data: "\000\000\000\002\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\024ui://8s73m8frxx2x6hj"
+  }
+}
+
+2017-11-23 14:05:13,846 [pool-6-thread-54] INFO  [SessionUtils] - roleId=10 message=SCChat {
+  chatData {
+    data: "\000\000\000\002\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\024ui://8s73m8frxx2x6hj"
+  }
+}
+
+2017-11-23 14:05:13,846 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]ChatSendResponse { } 
+2017-11-23 14:05:13,847 [pool-6-thread-55] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]SCChat {
+  chatData {
+    data: "\000\000\000\002\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\024ui://8s73m8frxx2x6hj"
+  }
+}
+
+2017-11-23 14:05:23,882 [pool-6-thread-55] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc] 收到消息ChatSendRequest {
+  roomId: "118142"
+  chatData {
+    data: "\000\000\000\002\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\024ui://8s73m8frxx2x6hg"
+  }
+}
+
+2017-11-23 14:05:23,883 [pool-6-thread-55] INFO  [SessionUtils] - roleId=10 message=SCChat {
+  chatData {
+    data: "\000\000\000\002\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\024ui://8s73m8frxx2x6hg"
+  }
+}
+
+2017-11-23 14:05:23,887 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]ChatSendResponse { } 
+2017-11-23 14:05:23,900 [pool-6-thread-56] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]SCChat {
+  chatData {
+    data: "\000\000\000\002\000\t\346\270\270\351\252\221\345\205\265\000\000\000\000\000\024ui://8s73m8frxx2x6hg"
+  }
+}
+
+2017-11-23 14:05:28,112 [pool-6-thread-54] INFO  [GameServerHandler] - roleId:10 sessionClosed
+2017-11-23 14:05:28,113 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:oIiUS0kZIHKI-euu0lWIyEAu5gqc]manipulate
+2017-11-23 14:07:29,683 [pool-6-thread-54] ERROR [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:273)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:44)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:690)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-23 14:07:29,683 [pool-6-thread-56] INFO  [GameServerHandler] - roleId:2 sessionClosed
+2017-11-23 14:07:29,693 [pool-6-thread-56] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz11]manipulate
+2017-11-23 14:12:16,764 [NioProcessor-4] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 14:12:16,766 [pool-6-thread-54] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 14:12:16,773 [pool-6-thread-57] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@491e0a8
+2017-11-23 14:12:21,119 [pool-6-thread-54] INFO  [GameServerHandler] - roleId:null sessionClosed
+2017-11-23 14:20:13,661 [NioProcessor-5] INFO  [GameServerHandler] - roleId:null sessionCreated
+2017-11-23 14:20:13,676 [pool-6-thread-54] INFO  [GameServerHandler] - roleId:null sessionOpened
+2017-11-23 14:20:13,677 [pool-6-thread-54] INFO  [GameServerHandler] - com.randioo.randioo_server_base.protocol.websocket.mina.WebSocketHandShakeResponse@2f48ac73
+2017-11-23 14:20:13,728 [pool-6-thread-57] INFO  [GameServerHandler] -  收到消息LoginRequest {
+  account: "allbluz10"
+  macAddress: "0f8dd8db-70ed-41a0-a285-f3a9a6cae96f"
+}
+
+2017-11-23 14:20:13,729 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]LoginResponse { } 
+2017-11-23 14:20:13,747 [pool-6-thread-54] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10] 收到消息ChatJoinRoomRequest {
+  roomId: "165780"
+}
+
+2017-11-23 14:20:13,748 [pool-6-thread-57] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]ChatJoinRoomResponse { } 
+2017-11-23 14:20:58,791 [pool-6-thread-57] INFO  [GameServerHandler] - roleId:1 sessionClosed
+2017-11-23 14:20:58,791 [pool-6-thread-57] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:allbluz10]manipulate
+2017-11-23 19:23:14,417 [pool-6-thread-132] INFO  [GameServerHandler] - roleId:7 sessionClosed
+2017-11-23 19:23:14,418 [pool-6-thread-132] INFO  [com.randioo.chat_server.entity.bo.Role] - [account:11]manipulate

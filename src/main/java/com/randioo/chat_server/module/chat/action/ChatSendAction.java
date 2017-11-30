@@ -15,13 +15,13 @@ import com.randioo.randioo_server_base.template.IActionSupport;
 @PTAnnotation(ChatSendRequest.class)
 public class ChatSendAction implements IActionSupport {
 
-	@Autowired
-	private ChatService chatService;
+    @Autowired
+    private ChatService chatService;
 
-	@Override
-	public void execute(Object data, IoSession session) {
-		ChatSendRequest request = (ChatSendRequest) data;
-		Role role = (Role) RoleCache.getRoleBySession(session);
-		chatService.send(session, role, request.getRoomId(), request.getChatData());
-	}
+    @Override
+    public void execute(Object data, Object session) {
+        ChatSendRequest request = (ChatSendRequest) data;
+        Role role = (Role) RoleCache.getRoleBySession(session);
+        chatService.send(session, role, request.getRoomId(), request.getChatData());
+    }
 }

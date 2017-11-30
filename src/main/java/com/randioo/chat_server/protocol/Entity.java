@@ -35,33 +35,12 @@ public final class Entity {
       return com.randioo.chat_server.protocol.Entity.internal_static_com_randioo_chat_server_protocol_ChatData_fieldAccessorTable;
     }
     
-    // optional int32 roleId = 1;
-    public static final int ROLEID_FIELD_NUMBER = 1;
-    private boolean hasRoleId;
-    private int roleId_ = 0;
-    public boolean hasRoleId() { return hasRoleId; }
-    public int getRoleId() { return roleId_; }
-    
-    // optional int32 tag = 4;
-    public static final int TAG_FIELD_NUMBER = 4;
-    private boolean hasTag;
-    private int tag_ = 0;
-    public boolean hasTag() { return hasTag; }
-    public int getTag() { return tag_; }
-    
-    // optional string msg = 2;
-    public static final int MSG_FIELD_NUMBER = 2;
-    private boolean hasMsg;
-    private java.lang.String msg_ = "";
-    public boolean hasMsg() { return hasMsg; }
-    public java.lang.String getMsg() { return msg_; }
-    
-    // optional bytes voice = 3;
-    public static final int VOICE_FIELD_NUMBER = 3;
-    private boolean hasVoice;
-    private com.google.protobuf.ByteString voice_ = com.google.protobuf.ByteString.EMPTY;
-    public boolean hasVoice() { return hasVoice; }
-    public com.google.protobuf.ByteString getVoice() { return voice_; }
+    // optional bytes data = 3;
+    public static final int DATA_FIELD_NUMBER = 3;
+    private boolean hasData;
+    private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+    public boolean hasData() { return hasData; }
+    public com.google.protobuf.ByteString getData() { return data_; }
     
     private void initFields() {
     }
@@ -72,17 +51,8 @@ public final class Entity {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (hasRoleId()) {
-        output.writeInt32(1, getRoleId());
-      }
-      if (hasMsg()) {
-        output.writeString(2, getMsg());
-      }
-      if (hasVoice()) {
-        output.writeBytes(3, getVoice());
-      }
-      if (hasTag()) {
-        output.writeInt32(4, getTag());
+      if (hasData()) {
+        output.writeBytes(3, getData());
       }
       getUnknownFields().writeTo(output);
     }
@@ -93,21 +63,9 @@ public final class Entity {
       if (size != -1) return size;
     
       size = 0;
-      if (hasRoleId()) {
+      if (hasData()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, getRoleId());
-      }
-      if (hasMsg()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeStringSize(2, getMsg());
-      }
-      if (hasVoice()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getVoice());
-      }
-      if (hasTag()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, getTag());
+          .computeBytesSize(3, getData());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -267,17 +225,8 @@ public final class Entity {
       
       public Builder mergeFrom(com.randioo.chat_server.protocol.Entity.ChatData other) {
         if (other == com.randioo.chat_server.protocol.Entity.ChatData.getDefaultInstance()) return this;
-        if (other.hasRoleId()) {
-          setRoleId(other.getRoleId());
-        }
-        if (other.hasTag()) {
-          setTag(other.getTag());
-        }
-        if (other.hasMsg()) {
-          setMsg(other.getMsg());
-        }
-        if (other.hasVoice()) {
-          setVoice(other.getVoice());
+        if (other.hasData()) {
+          setData(other.getData());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -304,20 +253,8 @@ public final class Entity {
               }
               break;
             }
-            case 8: {
-              setRoleId(input.readInt32());
-              break;
-            }
-            case 18: {
-              setMsg(input.readString());
-              break;
-            }
             case 26: {
-              setVoice(input.readBytes());
-              break;
-            }
-            case 32: {
-              setTag(input.readInt32());
+              setData(input.readBytes());
               break;
             }
           }
@@ -325,81 +262,24 @@ public final class Entity {
       }
       
       
-      // optional int32 roleId = 1;
-      public boolean hasRoleId() {
-        return result.hasRoleId();
+      // optional bytes data = 3;
+      public boolean hasData() {
+        return result.hasData();
       }
-      public int getRoleId() {
-        return result.getRoleId();
+      public com.google.protobuf.ByteString getData() {
+        return result.getData();
       }
-      public Builder setRoleId(int value) {
-        result.hasRoleId = true;
-        result.roleId_ = value;
-        return this;
-      }
-      public Builder clearRoleId() {
-        result.hasRoleId = false;
-        result.roleId_ = 0;
-        return this;
-      }
-      
-      // optional int32 tag = 4;
-      public boolean hasTag() {
-        return result.hasTag();
-      }
-      public int getTag() {
-        return result.getTag();
-      }
-      public Builder setTag(int value) {
-        result.hasTag = true;
-        result.tag_ = value;
-        return this;
-      }
-      public Builder clearTag() {
-        result.hasTag = false;
-        result.tag_ = 0;
-        return this;
-      }
-      
-      // optional string msg = 2;
-      public boolean hasMsg() {
-        return result.hasMsg();
-      }
-      public java.lang.String getMsg() {
-        return result.getMsg();
-      }
-      public Builder setMsg(java.lang.String value) {
+      public Builder setData(com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  result.hasMsg = true;
-        result.msg_ = value;
+  result.hasData = true;
+        result.data_ = value;
         return this;
       }
-      public Builder clearMsg() {
-        result.hasMsg = false;
-        result.msg_ = getDefaultInstance().getMsg();
-        return this;
-      }
-      
-      // optional bytes voice = 3;
-      public boolean hasVoice() {
-        return result.hasVoice();
-      }
-      public com.google.protobuf.ByteString getVoice() {
-        return result.getVoice();
-      }
-      public Builder setVoice(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  result.hasVoice = true;
-        result.voice_ = value;
-        return this;
-      }
-      public Builder clearVoice() {
-        result.hasVoice = false;
-        result.voice_ = getDefaultInstance().getVoice();
+      public Builder clearData() {
+        result.hasData = false;
+        result.data_ = getDefaultInstance().getData();
         return this;
       }
       
@@ -430,8 +310,7 @@ public final class Entity {
   static {
     java.lang.String[] descriptorData = {
       "\n\014Entity.proto\022 com.randioo.chat_server." +
-      "protocol\"C\n\010ChatData\022\016\n\006roleId\030\001 \001(\005\022\013\n\003" +
-      "tag\030\004 \001(\005\022\013\n\003msg\030\002 \001(\t\022\r\n\005voice\030\003 \001(\014"
+      "protocol\"\030\n\010ChatData\022\014\n\004data\030\003 \001(\014"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -443,7 +322,7 @@ public final class Entity {
           internal_static_com_randioo_chat_server_protocol_ChatData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_randioo_chat_server_protocol_ChatData_descriptor,
-              new java.lang.String[] { "RoleId", "Tag", "Msg", "Voice", },
+              new java.lang.String[] { "Data", },
               com.randioo.chat_server.protocol.Entity.ChatData.class,
               com.randioo.chat_server.protocol.Entity.ChatData.Builder.class);
           return null;

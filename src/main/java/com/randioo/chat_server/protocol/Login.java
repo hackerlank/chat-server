@@ -42,6 +42,13 @@ public final class Login {
     public boolean hasAccount() { return hasAccount; }
     public java.lang.String getAccount() { return account_; }
     
+    // optional string macAddress = 2;
+    public static final int MACADDRESS_FIELD_NUMBER = 2;
+    private boolean hasMacAddress;
+    private java.lang.String macAddress_ = "";
+    public boolean hasMacAddress() { return hasMacAddress; }
+    public java.lang.String getMacAddress() { return macAddress_; }
+    
     private void initFields() {
     }
     public final boolean isInitialized() {
@@ -53,6 +60,9 @@ public final class Login {
       getSerializedSize();
       if (hasAccount()) {
         output.writeString(1, getAccount());
+      }
+      if (hasMacAddress()) {
+        output.writeString(2, getMacAddress());
       }
       getUnknownFields().writeTo(output);
     }
@@ -66,6 +76,10 @@ public final class Login {
       if (hasAccount()) {
         size += com.google.protobuf.CodedOutputStream
           .computeStringSize(1, getAccount());
+      }
+      if (hasMacAddress()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeStringSize(2, getMacAddress());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -228,6 +242,9 @@ public final class Login {
         if (other.hasAccount()) {
           setAccount(other.getAccount());
         }
+        if (other.hasMacAddress()) {
+          setMacAddress(other.getMacAddress());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -257,6 +274,10 @@ public final class Login {
               setAccount(input.readString());
               break;
             }
+            case 18: {
+              setMacAddress(input.readString());
+              break;
+            }
           }
         }
       }
@@ -280,6 +301,27 @@ public final class Login {
       public Builder clearAccount() {
         result.hasAccount = false;
         result.account_ = getDefaultInstance().getAccount();
+        return this;
+      }
+      
+      // optional string macAddress = 2;
+      public boolean hasMacAddress() {
+        return result.hasMacAddress();
+      }
+      public java.lang.String getMacAddress() {
+        return result.getMacAddress();
+      }
+      public Builder setMacAddress(java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  result.hasMacAddress = true;
+        result.macAddress_ = value;
+        return this;
+      }
+      public Builder clearMacAddress() {
+        result.hasMacAddress = false;
+        result.macAddress_ = getDefaultInstance().getMacAddress();
         return this;
       }
       
@@ -599,9 +641,9 @@ public final class Login {
   static {
     java.lang.String[] descriptorData = {
       "\n\013Login.proto\022 com.randioo.chat_server.p" +
-      "rotocol\032\014Entity.proto\"\037\n\014LoginRequest\022\017\n" +
-      "\007account\030\001 \001(\t\"%\n\rLoginResponse\022\024\n\terror" +
-      "Code\030\001 \001(\005:\0011"
+      "rotocol\032\014Entity.proto\"3\n\014LoginRequest\022\017\n" +
+      "\007account\030\001 \001(\t\022\022\n\nmacAddress\030\002 \001(\t\"%\n\rLo" +
+      "ginResponse\022\024\n\terrorCode\030\001 \001(\005:\0011"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -613,7 +655,7 @@ public final class Login {
           internal_static_com_randioo_chat_server_protocol_LoginRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_randioo_chat_server_protocol_LoginRequest_descriptor,
-              new java.lang.String[] { "Account", },
+              new java.lang.String[] { "Account", "MacAddress", },
               com.randioo.chat_server.protocol.Login.LoginRequest.class,
               com.randioo.chat_server.protocol.Login.LoginRequest.Builder.class);
           internal_static_com_randioo_chat_server_protocol_LoginResponse_descriptor =

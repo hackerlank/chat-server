@@ -3,6 +3,7 @@ import "Entity.proto";
 
 message LoginRequest{
 	optional string account = 1;
+	optional string macAddress = 2;
 }
 
 message LoginResponse{

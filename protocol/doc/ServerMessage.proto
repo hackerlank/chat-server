@@ -1,6 +1,7 @@
 package com.randioo.chat_server.protocol;
 import "Chat.proto";
 import "Login.proto";
+import "Heart.proto";
 
 message SC{
 	optional LoginResponse LoginResponse = 1;
@@ -9,4 +10,8 @@ message SC{
 	optional ChatJoinRoomResponse ChatJoinRoomResponse = 3;
 	optional ChatQuitRoomResponse ChatQuitRoomResponse = 4;
 	optional SCChat SCChat = 5;
-} // 5
+
+
+	optional HeartResponse HeartResponse = 6;//心跳回馈
+	optional SCHeart SCHeart = 7;//心跳主推
+} // 7
